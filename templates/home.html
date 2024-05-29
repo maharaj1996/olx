@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriceDekho - Know Your Car Price</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            border-bottom: 2px solid #e50914;
+        }
+
+        .title {
+            color: #e50914;
+            text-align: center;
+            font-size: 2em;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .nav-link {
+            color: #e50914;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #ff6347;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(145deg, #1e1e1e, #121212);
+            animation: fadeIn 2s ease-out;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content {
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-out;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            border-top: 2px solid #e50914;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            color: #888;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title">PriceDekho</h1>
+            <nav>
+                <a href="/check" class="nav-link">Know Your Car Price</a>
+                <a href="/contact" class="nav-link">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Find the Best Price for Your Second Hand Car</h2>
+            <p>With PriceDekho, get the most accurate and up-to-date valuations for your used car.</p>
+        </section>
+        <section id="know-your-car-price" class="content">
+            <h2>Know Your Car Price</h2>
+            <p>Enter your car details to find out the current market value of your second hand car.</p>
+        </section>
+        <section id="contact-us" class="content">
+            <h2>Contact Us</h2>
+            <p>Have any questions? Get in touch with us!</p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PriceDekho. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
